@@ -1,7 +1,9 @@
 <p>
   <form ng-submit="submit(petObject)">
-    <input ng-model="petObject.name" type="text" />
-    <input ng-model="petObject.type" type="text" />
+    <input ng-model="petObject.name" type="text" placeholder="Pet Name"/>
+    <input ng-model="petObject.animal" type="text" placeholder="Pet Type"/>
+    <input ng-model="petObject.age" type="text" placeholder="Pet Age"/>
+    <input ng-model="petObject.imageUrl" type="text" placeholder="Image URL"/>
     <input  type="submit"/>
   </form>
 </p>

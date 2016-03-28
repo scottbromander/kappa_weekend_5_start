@@ -1,3 +1,7 @@
 <p>
   List o pets
+  <div ng-repeat="pet in data.results | orderBy: 'name' " >
+    <p> {{ pet.name }}  {{ pet.animal }}  {{ pet.age }} </p>
+    <button ng-click="showId(pet)">Delete Me</button>
+  </div>
 </p>
